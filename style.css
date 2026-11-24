@@ -279,6 +279,13 @@ p, h1, h2 { margin: 0; }
 }
 .footer-links a:hover { color: #ffd197; }
 
+@media (min-width: 44.01rem) and (max-height: 49rem) {
+  .hero { padding-block: clamp(2rem, 6vh, 3.5rem); }
+  .hero h1 {
+    width: min(100%, 48rem, max(20rem, calc((100svh - 15rem) * 1.8)));
+    margin-block: 1.4rem 1.8rem;
+  }
+}
 @media (max-width: 44rem) {
   :root { --nav-height: 3.75rem; }
   .hero { min-height: min(34rem, calc(100svh - var(--nav-height))); }
